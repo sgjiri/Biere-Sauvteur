@@ -1,0 +1,419 @@
+$shadow: rgba(23, 18, 18, 0.6);
+$green: #264e26;
+$yellow: #e2bf3a;
+$LeagueSpatanBold: "LeagueSpartan-secondTitle", sans-serif;
+$LocalBrewery: "LocalBrewery", sans-serif;
+$LeagueSpartanMedium: "LeagueSpartan-medium", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.width-contect-section{
+  margin: 0 auto;
+  width: 85%;
+}
+
+header {
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 700px) {
+    top: 0;
+    height: 150px;
+    flex-direction: column-reverse;
+  }
+  .navDashboard {
+    display: none;
+    margin-left: 50px;
+    @media screen and (min-width: 700px) {
+      display: block;
+    }
+    ul {
+      display: flex;
+      li {
+        list-style-type: none;
+        padding: 0 5px;
+        @media screen and (min-width: 1150px) {
+          padding: 0 15px;
+        }
+        a {
+          font-family: $LocalBrewery;
+          color: $yellow;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.1em;
+          @media screen and (min-width: 1000px) {
+            font-size: 1.8em;
+          }
+          @media screen and (min-width: 1350px) {
+            font-size: 2.2em;
+          }
+        }
+      }
+    }
+  }
+  .header-container-top {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    .header-container-top-shadow {
+      height: 142%;
+      width: 64px;
+      background-color: rgba(23, 18, 18, 0.6);
+      border-radius: 180px 180px 0 0;
+      margin-top: 61px;
+      @media screen and (min-width: 700px) {
+        margin-bottom: 90px;
+        border-radius: 0 0 180px 180px;
+        width: 170px;
+      }
+    }
+  }
+
+  .header-container-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgba(23, 18, 18, 0.6);
+    @media screen and (min-width: 700px) {
+      justify-content: space-between;
+    }
+    .item-menu-mobil {
+      width: 17.5%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 700px) {
+        display: none;
+      }
+      figure {
+        width: 30px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .navBurger {
+      display: none;
+    }
+    .burger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      @media screen and (min-width: 700px) {
+        display: none;
+      }
+      .container-figure-burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 85%;
+        position: relative;
+        width: 35px;
+        figure {
+          height: 25%;
+          position: absolute;
+          width: 70%;
+          img {
+            transform: rotate(0deg);
+            height: 100%;
+            width: 100%;
+          }
+          .second-img-burger {
+            transform: rotate(180deg);
+          }
+        }
+        .firstLine {
+          top: 2px;
+          right: 0;
+        }
+        .secondLine {
+          top: 13px;
+          left: 3px;
+        }
+        .thirtLine {
+          top: 23px;
+          right: 0;
+        }
+      }
+    }
+    .container-logo {
+      position: relative;
+      height: 200%;
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (min-width: 700px) {
+        width: auto;
+      }
+      .logo {
+        position: absolute;
+        top: 7px;
+        width: 65px;
+        border-radius: 50% 50% 0 0;
+
+        @media screen and (min-width: 700px) {
+          top: 35px;
+          width: 150px;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .block-header {
+      width: 35%;
+      display: none;
+      @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: flex-end;
+      }
+      &:first-child {
+        justify-content: flex-start;
+      }
+      .item-header-right {
+        display: none;
+        margin-right: 50px;
+        @media screen and (min-width: 700px) {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+        @media screen and (min-width: 1000px) {
+          margin-right: 100px;
+        }
+        span {
+          margin: 0 10px;
+          height: 50%;
+          figure {
+            height: 100%;
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  background: url(../img/friends.jpg) center center / cover no-repeat;
+  .hero-degradation {
+    background-color: $shadow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+      width: 50%;
+      @media screen and (min-width: 500px) {
+        width: 40%;
+      }
+      @media screen and (min-width: 700px) {
+        width: 30%;
+      }
+      @media screen and (min-width: 1000px) {
+        width: 25%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.section-slogan {
+  background-color: $yellow;
+  position: relative;
+
+  figure {
+    position: absolute;
+  }
+  .figure-section-slogan-left {
+    left: -100px;
+    top: 12%;
+    height: 250px;
+    @media screen and (min-width: 900px) {
+      left: -200px;
+      height: 80%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .figure-section-slogan-right {
+    right: 0;
+    top: 75%;
+    height: 200px;
+    @media screen and (min-width: 900px) {
+      top: 65%;
+      height: 60%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .slogan-section-slogan {
+    color: $green;
+    text-transform: uppercase;
+    padding: 200px 20%;
+    font-family: $LeagueSpatanBold;
+    font-size: 1.2em;
+    text-align: center;
+    @media screen and (min-width: 550px) {
+      font-size: 1.8em;
+    }
+    @media screen and (min-width: 900px) {
+      padding: 300px 30%;
+      font-size: 2.5em;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 3.5em;
+    }
+  }
+}
+.section-slider {
+  background: url(../img/beer.png) center center / cover no-repeat;
+  .efect-lenear {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 21.95%,
+      rgba(0, 0, 0, 0) 102.73%
+    );
+
+    h3 {
+      margin-left: 30px;
+      padding: 50px 0;
+      font-family: $LeagueSpartanMedium;
+      color: $yellow;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      @media screen and (min-width: 500px) {
+        font-size: 1.8em;
+      }
+      @media screen and (min-width: 700px) {
+        font-size: 2.5em;
+        margin-left: 100px;
+      }
+      @media screen and (min-width: 1000px) {
+        font-size: 3.5em;
+      }
+      span {
+        background-color: $yellow;
+        color: $green;
+      }
+    }
+    .slider-btns {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin: 10px auto 0px;
+      padding: 0 10px 100px;
+      height: 40px;
+
+      @media screen and (min-width: 700px) {
+        padding: 0 10px 150px;
+        margin: 30px auto 0px;
+        height: 60px;
+      }
+      @media screen and (min-width: 1000px) {
+        height: 80px;
+      }
+      button{
+        height: 40px;
+        margin: 0 10px;
+        position: static !important;
+
+        @media screen and (min-width: 700px) {
+          height: 60px;
+        }
+        @media screen and (min-width: 1000px) {
+          height: 80px;
+        }
+        figure {
+          height: 100%;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .glider-next {
+        figure {
+          img {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+    .contrent-slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 50px auto 20px;
+      width: 95%;
+      .product-box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: $yellow;
+        margin: 0 20px;
+
+        .p-img-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          overflow: hidden;
+
+          .p-img {
+            width: 100%;
+            height: 100%;
+            display: flex;
+
+            a {
+              width: 100%;
+              height: 100%;
+              display: flex;
+              img {
+                width: 100%;
+                height: 70%;
+                object-position: center;
+                object-fit: contain;
+              }
+            }
+          }
+        }
+        .p-box-text {
+          margin-top: 5px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+footer{
+  background-color: $yellow;
+}

@@ -482,6 +482,6 @@ class __TwigTemplate_98916f3a7b8d07a4f1ecd754f8abbca048dedb8e49805f3bd3b105040cc
         {% endfor %}
     </table>
 {% endmacro %}
-", "@WebProfiler/Collector/events.html.twig", "C:\\wamp64\\www\\Symphony\\firstproject\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
+", "@WebProfiler/Collector/events.html.twig", "C:\\wamp64\\www\\Projet\\Biere-Sauvteur\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\events.html.twig");
     }
 }

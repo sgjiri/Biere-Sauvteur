@@ -557,6 +557,6 @@ class __TwigTemplate_61ffe4c89662f4898c20077dd1f0522e201bdd455e0b6e04db8fac4e390
         {% endif %}
     </div>
 {% endblock %}
-", "@WebProfiler/Collector/http_client.html.twig", "C:\\wamp64\\www\\Symphony\\firstproject\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
+", "@WebProfiler/Collector/http_client.html.twig", "C:\\wamp64\\www\\Projet\\Biere-Sauvteur\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\http_client.html.twig");
     }
 }

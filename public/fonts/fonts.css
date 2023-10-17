@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "LeagueSpartan-secondTitle";
+    src:url(./LeagueSpartan/static/LeagueSpartan-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "LeagueSpartan-medium";
+    src:url(./LeagueSpartan/static/LeagueSpartan-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "LocalBrewery";
+    src:url(./LocalBrewery/LocalBrewerySans.ttf) format("truetype");
+}

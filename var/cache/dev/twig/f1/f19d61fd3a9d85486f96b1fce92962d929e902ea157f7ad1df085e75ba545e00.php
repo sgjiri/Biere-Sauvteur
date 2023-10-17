@@ -41,29 +41,81 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
 
         // line 1
         echo "<header>
-\t<nav></nav>
-\t<nav class='navBurger'></nav>
-\t<span class='burger'>
-\t\t<figure class=\"ligneBurger firstLine\">
-\t\t\t<img src=\"../img/beer-bottle.png\" alt=\"ligne de burger\">
-\t\t</figure>
-\t\t<figure class=\"ligneBurger secondLine\">
-\t\t\t<img src=\"../img/beer-bottle.svg\" alt=\"ligne de burger\">
-\t\t</figure>
-\t\t<figure class=\"ligneBurger thirtLine\">
-\t\t\t<img src=\"../img/beer-bottle.svg\" alt=\"ligne de burger\">
-\t\t</figure>
-\t</span>
-\t<span class='content-user'></span>
-\t<figure class='logo'>
-\t\t<img src=\"\" alt=\"logo\">
-\t</figure>
-\t<span class='content-search span-nav'></span>
-\t<span class='content panier'>
-\t\t<figure>
-\t\t\t<img src=\"\" alt=\"\">
-\t\t</figure>
-\t</span>
+
+\t<div class=\"header-container  header-container-top\">
+\t\t<div class=\"header-container-top-shadow\"></div>
+\t</div>
+\t<div class=\"header-container header-container-bottom\">
+\t\t<div class='block-header'>
+\t\t\t<nav class='navDashboard'>
+\t\t\t\t<ul>
+\t\t\t\t\t<li><a href=\"\">accuel</a></li>
+\t\t\t\t\t<li><a href=\"\">boutique</a></li>
+\t\t\t\t\t<li><a href=\"\">a propos</a></li>
+\t\t\t\t</ul>
+\t\t\t</nav>
+\t\t</div>
+
+\t\t<nav class='navBurger'></nav>
+\t\t<span class='burger item-menu-mobil'>
+\t\t\t<div class='container-figure-burger'>
+\t\t\t\t<figure class=\"ligneBurger firstLine\">
+\t\t\t\t\t<img class='first-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t\t<figure class=\"ligneBurger secondLine\">
+\t\t\t\t\t<img class='second-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t\t<figure class=\"ligneBurger thirtLine\">
+\t\t\t\t\t<img class='third-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t</div>
+\t\t</span>
+\t\t<span class='content-user item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
+\t\t\t</figure>
+\t\t</span>
+\t\t<div class='container-logo'>
+\t\t\t<figure class='logo'>
+\t\t\t\t<img src=\"../img/Logo.svg\" alt=\"logo\">
+\t\t\t</figure>
+\t\t</div>
+\t\t<div class='block-header'>
+\t\t\t<div class='item-header-right'>
+\t\t\t\t<span class='content-user'>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+\t\t\t\t<span class='content-search span-nav'>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+\t\t\t\t<span class='content-panier '>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/panier.svg\" alt=\"panier\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+
+\t\t\t</div>
+\t\t</div>
+
+\t\t<span class='content-search span-nav item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
+\t\t\t</figure>
+\t\t</span>
+\t\t<span class='content-panier item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/panier.svg\" alt=\"panier\">
+\t\t\t</figure>
+\t\t</span>
+
+
+\t</div>
+
+
 </header>
 ";
         
@@ -87,30 +139,82 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
     public function getSourceContext()
     {
         return new Source("<header>
-\t<nav></nav>
-\t<nav class='navBurger'></nav>
-\t<span class='burger'>
-\t\t<figure class=\"ligneBurger firstLine\">
-\t\t\t<img src=\"../img/beer-bottle.png\" alt=\"ligne de burger\">
-\t\t</figure>
-\t\t<figure class=\"ligneBurger secondLine\">
-\t\t\t<img src=\"../img/beer-bottle.svg\" alt=\"ligne de burger\">
-\t\t</figure>
-\t\t<figure class=\"ligneBurger thirtLine\">
-\t\t\t<img src=\"../img/beer-bottle.svg\" alt=\"ligne de burger\">
-\t\t</figure>
-\t</span>
-\t<span class='content-user'></span>
-\t<figure class='logo'>
-\t\t<img src=\"\" alt=\"logo\">
-\t</figure>
-\t<span class='content-search span-nav'></span>
-\t<span class='content panier'>
-\t\t<figure>
-\t\t\t<img src=\"\" alt=\"\">
-\t\t</figure>
-\t</span>
+
+\t<div class=\"header-container  header-container-top\">
+\t\t<div class=\"header-container-top-shadow\"></div>
+\t</div>
+\t<div class=\"header-container header-container-bottom\">
+\t\t<div class='block-header'>
+\t\t\t<nav class='navDashboard'>
+\t\t\t\t<ul>
+\t\t\t\t\t<li><a href=\"\">accuel</a></li>
+\t\t\t\t\t<li><a href=\"\">boutique</a></li>
+\t\t\t\t\t<li><a href=\"\">a propos</a></li>
+\t\t\t\t</ul>
+\t\t\t</nav>
+\t\t</div>
+
+\t\t<nav class='navBurger'></nav>
+\t\t<span class='burger item-menu-mobil'>
+\t\t\t<div class='container-figure-burger'>
+\t\t\t\t<figure class=\"ligneBurger firstLine\">
+\t\t\t\t\t<img class='first-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t\t<figure class=\"ligneBurger secondLine\">
+\t\t\t\t\t<img class='second-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t\t<figure class=\"ligneBurger thirtLine\">
+\t\t\t\t\t<img class='third-img-burger' src=\"../img/bottle.svg\" alt=\"ligne de burger\">
+\t\t\t\t</figure>
+\t\t\t</div>
+\t\t</span>
+\t\t<span class='content-user item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
+\t\t\t</figure>
+\t\t</span>
+\t\t<div class='container-logo'>
+\t\t\t<figure class='logo'>
+\t\t\t\t<img src=\"../img/Logo.svg\" alt=\"logo\">
+\t\t\t</figure>
+\t\t</div>
+\t\t<div class='block-header'>
+\t\t\t<div class='item-header-right'>
+\t\t\t\t<span class='content-user'>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+\t\t\t\t<span class='content-search span-nav'>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+\t\t\t\t<span class='content-panier '>
+\t\t\t\t\t<figure>
+\t\t\t\t\t\t<img src=\"../img/panier.svg\" alt=\"panier\">
+\t\t\t\t\t</figure>
+\t\t\t\t</span>
+
+\t\t\t</div>
+\t\t</div>
+
+\t\t<span class='content-search span-nav item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
+\t\t\t</figure>
+\t\t</span>
+\t\t<span class='content-panier item-menu-mobil'>
+\t\t\t<figure>
+\t\t\t\t<img src=\"../img/panier.svg\" alt=\"panier\">
+\t\t\t</figure>
+\t\t</span>
+
+
+\t</div>
+
+
 </header>
-", "./part/header.html.twig", "C:\\wamp64\\www\\Symphony\\firstproject\\templates\\part\\header.html.twig");
+", "./part/header.html.twig", "C:\\wamp64\\www\\Projet\\Biere-Sauvteur\\templates\\part\\header.html.twig");
     }
 }
