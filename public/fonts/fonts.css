@@ -11,3 +11,12 @@
     font-family: "LocalBrewery";
     src:url(./LocalBrewery/LocalBrewerySans.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src:url(./Popins/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src:url(./Popins/Poppins-Light.ttf) format("truetype");
+}
+
