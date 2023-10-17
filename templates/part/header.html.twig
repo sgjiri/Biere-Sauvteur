@@ -7,7 +7,7 @@
 		<div class='block-header'>
 			<nav class='navDashboard'>
 				<ul>
-					<li><a href="">accuel</a></li>
+					<li><a href="{{ path('app_page') }}">accuel</a></li>
 					<li><a href="">boutique</a></li>
 					<li><a href="">a propos</a></li>
 				</ul>
@@ -40,11 +40,11 @@
 		</div>
 		<div class='block-header'>
 			<div class='item-header-right'>
-				<span class='content-user'>
+				<a href="{{ path('app_register') }}" class='content-user'>
 					<figure>
 						<img src="../img/utilisateur(1).png" alt="logo utilisatur">
 					</figure>
-				</span>
+				</a>
 				<span class='content-search span-nav'>
 					<figure>
 						<img src="../img/Search.svg" alt="logo loup">

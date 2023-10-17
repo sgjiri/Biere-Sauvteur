@@ -219,14 +219,15 @@ header .header-container-bottom .block-header .item-header-right {
     margin-right: 100px;
   }
 }
-header .header-container-bottom .block-header .item-header-right span {
+header .header-container-bottom .block-header .item-header-right span, header .header-container-bottom .block-header .item-header-right a {
+  cursor: pointer;
   margin: 0 10px;
   height: 50%;
 }
-header .header-container-bottom .block-header .item-header-right span figure {
+header .header-container-bottom .block-header .item-header-right span figure, header .header-container-bottom .block-header .item-header-right a figure {
   height: 100%;
 }
-header .header-container-bottom .block-header .item-header-right span figure img {
+header .header-container-bottom .block-header .item-header-right span figure img, header .header-container-bottom .block-header .item-header-right a figure img {
   height: 100%;
 }
 
@@ -450,6 +451,92 @@ header .header-container-bottom .block-header .item-header-right span figure img
   flex-direction: column;
 }
 
+.hero-registration {
+  height: 100vh;
+  background: url(../img/friends.jpg) center center/cover no-repeat;
+}
+.hero-registration .hero-degradation {
+  background-color: rgba(23, 18, 18, 0.6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   background-color: #e2bf3a;
+}
+footer p {
+  color: #264e26;
+  font-family: "Poppins-Light", sans-serif;
+  font-size: 1.2em;
+}
+footer h4 {
+  color: #264e26;
+  font-size: 1.2em;
+  font-family: "Poppins-SemiBold", sans-serif;
+  margin: 10px 0;
+}
+footer .width-contect-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+footer .width-contect-section .content-footer {
+  width: 450px;
+  height: 300px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer .width-contect-section .content-footer .center-text-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .width-contect-section .content-footer .center-text-footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+footer .width-contect-section .content-footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: flex-start;
+}
+footer .width-contect-section .content-footer div .content-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+}
+footer .width-contect-section .content-footer div .content-contact figure {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .width-contect-section .content-footer .logo {
+  height: 100%;
+  width: 100%;
+}
+footer .width-contect-section .content-footer .logo img {
+  height: 100%;
+  width: 100%;
+}
+footer .width-contect-section .content-footer .reaseaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .width-contect-section .content-footer .reaseaux a {
+  margin: 0 10px;
+  height: 70px;
+}
+footer .width-contect-section .content-footer .reaseaux a img {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */

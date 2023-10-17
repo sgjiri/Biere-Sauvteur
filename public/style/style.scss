@@ -5,13 +5,17 @@ $LeagueSpatanBold: "LeagueSpartan-secondTitle", sans-serif;
 $LocalBrewery: "LocalBrewery", sans-serif;
 $LeagueSpartanMedium: "LeagueSpartan-medium", sans-serif;
 
+$Poppins-Light: "Poppins-Light", sans-serif;
+
+$Poppins-SemiBold: "Poppins-SemiBold", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.width-contect-section{
+.width-contect-section {
   margin: 0 auto;
   width: 85%;
 }
@@ -198,12 +202,13 @@ header {
         @media screen and (min-width: 1000px) {
           margin-right: 100px;
         }
-        span {
-          margin: 0 10px;
-          height: 50%;
-          figure {
+        span, a {
+        cursor: pointer;
+        margin: 0 10px;
+        height: 50%;
+          figure{
             height: 100%;
-            img {
+            img{
               height: 100%;
             }
           }
@@ -339,7 +344,7 @@ header {
       @media screen and (min-width: 1000px) {
         height: 80px;
       }
-      button{
+      button {
         height: 40px;
         margin: 0 10px;
         position: static !important;
@@ -414,6 +419,95 @@ header {
     }
   }
 }
-footer{
+.hero-registration{
+  height: 100vh;
+  background: url(../img/friends.jpg) center center / cover no-repeat;
+  .hero-degradation {
+    background-color: $shadow;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+footer {
   background-color: $yellow;
+
+  p {
+    color: $green;
+    font-family: $Poppins-Light;
+    font-size: 1.2em;
+  }
+  h4 {
+    color: $green;
+    font-size: 1.2em;
+    font-family: $Poppins-SemiBold;
+    margin: 10px 0;
+  }
+  .width-contect-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .content-footer {
+      width: 450px;
+      height: 300px;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .center-text-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          justify-content: flex-start;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: flex-start;
+
+        .content-contact {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 10px 0;
+
+          figure {
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+      .logo {
+        height: 100%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .reaseaux {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        a {
+          margin: 0 10px;
+          height: 70px;
+          img {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
 }

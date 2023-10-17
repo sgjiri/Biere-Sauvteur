@@ -49,7 +49,10 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
 \t\t<div class='block-header'>
 \t\t\t<nav class='navDashboard'>
 \t\t\t\t<ul>
-\t\t\t\t\t<li><a href=\"\">accuel</a></li>
+\t\t\t\t\t<li><a href=\"";
+        // line 10
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_page");
+        echo "\">accuel</a></li>
 \t\t\t\t\t<li><a href=\"\">boutique</a></li>
 \t\t\t\t\t<li><a href=\"\">a propos</a></li>
 \t\t\t\t</ul>
@@ -82,11 +85,14 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
 \t\t</div>
 \t\t<div class='block-header'>
 \t\t\t<div class='item-header-right'>
-\t\t\t\t<span class='content-user'>
+\t\t\t\t<a href=\"";
+        // line 43
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+        echo "\" class='content-user'>
 \t\t\t\t\t<figure>
 \t\t\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
 \t\t\t\t\t</figure>
-\t\t\t\t</span>
+\t\t\t\t</a>
 \t\t\t\t<span class='content-search span-nav'>
 \t\t\t\t\t<figure>
 \t\t\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
@@ -131,9 +137,14 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
         return "./part/header.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  43 => 1,);
+        return array (  90 => 43,  54 => 10,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -147,7 +158,7 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
 \t\t<div class='block-header'>
 \t\t\t<nav class='navDashboard'>
 \t\t\t\t<ul>
-\t\t\t\t\t<li><a href=\"\">accuel</a></li>
+\t\t\t\t\t<li><a href=\"{{ path('app_page') }}\">accuel</a></li>
 \t\t\t\t\t<li><a href=\"\">boutique</a></li>
 \t\t\t\t\t<li><a href=\"\">a propos</a></li>
 \t\t\t\t</ul>
@@ -180,11 +191,11 @@ class __TwigTemplate_9293bb1c59fdc903f0322578c6840a50dc174acedaa008f199e596467cb
 \t\t</div>
 \t\t<div class='block-header'>
 \t\t\t<div class='item-header-right'>
-\t\t\t\t<span class='content-user'>
+\t\t\t\t<a href=\"{{ path('app_register') }}\" class='content-user'>
 \t\t\t\t\t<figure>
 \t\t\t\t\t\t<img src=\"../img/utilisateur(1).png\" alt=\"logo utilisatur\">
 \t\t\t\t\t</figure>
-\t\t\t\t</span>
+\t\t\t\t</a>
 \t\t\t\t<span class='content-search span-nav'>
 \t\t\t\t\t<figure>
 \t\t\t\t\t\t<img src=\"../img/Search.svg\" alt=\"logo loup\">
