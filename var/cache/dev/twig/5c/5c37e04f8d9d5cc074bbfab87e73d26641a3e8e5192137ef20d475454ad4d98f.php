@@ -1828,6 +1828,6 @@ class __TwigTemplate_a276b6e32309a7b776fac61b8afe9675d801ebdff63cf7c09b03cac07a0
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "C:\\wamp64\\www\\Symphony\\firstproject\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "C:\\wamp64\\www\\Projet\\Biere-Sauvteur\\vendor\\doctrine\\doctrine-bundle\\Resources\\views\\Collector\\db.html.twig");
     }
 }
