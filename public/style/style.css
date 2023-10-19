@@ -48,7 +48,7 @@ header .navDashboard ul li {
 }
 header .navDashboard ul li a {
   font-family: "LocalBrewery", sans-serif;
-  color: #e2bf3a;
+  color: rgb(226, 191, 58);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.1em;
@@ -219,15 +219,18 @@ header .header-container-bottom .block-header .item-header-right {
     margin-right: 100px;
   }
 }
-header .header-container-bottom .block-header .item-header-right span, header .header-container-bottom .block-header .item-header-right a {
+header .header-container-bottom .block-header .item-header-right span,
+header .header-container-bottom .block-header .item-header-right a {
   cursor: pointer;
   margin: 0 10px;
   height: 50%;
 }
-header .header-container-bottom .block-header .item-header-right span figure, header .header-container-bottom .block-header .item-header-right a figure {
+header .header-container-bottom .block-header .item-header-right span figure,
+header .header-container-bottom .block-header .item-header-right a figure {
   height: 100%;
 }
-header .header-container-bottom .block-header .item-header-right span figure img, header .header-container-bottom .block-header .item-header-right a figure img {
+header .header-container-bottom .block-header .item-header-right span figure img,
+header .header-container-bottom .block-header .item-header-right a figure img {
   height: 100%;
 }
 
@@ -265,7 +268,7 @@ header .header-container-bottom .block-header .item-header-right span figure img
 }
 
 .section-slogan {
-  background-color: #e2bf3a;
+  background-color: rgb(226, 191, 58);
   position: relative;
 }
 .section-slogan figure {
@@ -336,7 +339,7 @@ header .header-container-bottom .block-header .item-header-right span figure img
   margin-left: 30px;
   padding: 50px 0;
   font-family: "LeagueSpartan-medium", sans-serif;
-  color: #e2bf3a;
+  color: rgb(226, 191, 58);
   font-size: 1.5em;
   line-height: 1.5em;
 }
@@ -357,7 +360,7 @@ header .header-container-bottom .block-header .item-header-right span figure img
   }
 }
 .section-slider .efect-lenear h3 span {
-  background-color: #e2bf3a;
+  background-color: rgb(226, 191, 58);
   color: #264e26;
 }
 .section-slider .efect-lenear .slider-btns {
@@ -417,7 +420,7 @@ header .header-container-bottom .block-header .item-header-right span figure img
   width: 300px;
   padding: 15px;
   border-radius: 10px;
-  background-color: #e2bf3a;
+  background-color: rgb(226, 191, 58);
   margin: 0 20px;
 }
 .section-slider .efect-lenear .contrent-slider .product-box .p-img-container {
@@ -462,9 +465,140 @@ header .header-container-bottom .block-header .item-header-right span figure img
   justify-content: center;
   align-items: center;
 }
+.hero-registration .hero-degradation .panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-registration .hero-degradation .panel {
+    width: 350px;
+    height: 500px;
+    overflow-y: visible;
+  }
+}
+.hero-registration .hero-degradation .panel button,
+.hero-registration .hero-degradation .panel input {
+  font-family: "Poppins-Light", sans-serif;
+  color: #264e26;
+  font-size: 0.8em;
+}
+.hero-registration .hero-degradation .panel button {
+  padding: 0;
+  cursor: pointer;
+  color: rgb(226, 191, 58);
+}
+.hero-registration .hero-degradation .panel a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-registration .hero-degradation .panel a:active, .hero-registration .hero-degradation .panel a:hover {
+  outline: 0;
+}
+.hero-registration .hero-degradation .panel .form-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+  background-color: rgba(226, 191, 58, 0.6);
+  overflow-y: auto;
+}
+@media screen and (min-width: 768px) {
+  .hero-registration .hero-degradation .panel .form-wrapper {
+    padding: 10% 15%;
+    border-radius: 10px;
+    overflow-y: visible;
+  }
+}
+.hero-registration .hero-degradation .panel .form-wrapper h1 {
+  color: #264e26;
+  font-family: "LeagueSpartan-secondTitle", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .mb-3 {
+  padding: 20px 0;
+  color: #264e26;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .mb-3 a {
+  padding: 5px;
+  color: #264e26;
+  border: solid 2px rgb(176, 12, 12);
+  border-radius: 10px;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row {
+  position: relative;
+  padding-top: 40px;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row.has-error > .form__error:after {
+  display: block;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background: none;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:focus, .hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:active {
+  outline: 0;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:focus ~ .form__label, .hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:active ~ .form__label, .hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:valid ~ .form__label {
+  bottom: 30px;
+  font-size: 0.75rem;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:focus ~ .form__bar, .hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__input:active ~ .form__bar {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__label {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+  pointer-events: none;
+  color: #264e26;
+  font-family: "Poppins-SemiBold", sans-serif;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form-label-register {
+  bottom: 25px;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__submit {
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #264e26;
+  cursor: pointer;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 1em;
+}
+.hero-registration .hero-degradation .panel .form-wrapper .form .form__row .form__lien {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #264e26;
+  cursor: pointer;
+  color: rgb(226, 191, 58);
+  text-align: center;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 1em;
+}
 
 footer {
-  background-color: #e2bf3a;
+  background-color: rgb(226, 191, 58);
 }
 footer p {
   color: #264e26;

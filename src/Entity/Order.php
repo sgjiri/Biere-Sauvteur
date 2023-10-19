@@ -21,9 +21,6 @@ class Order
     #[ORM\Column]
     private array $Order_status = [];
 
-    #[ORM\ManyToOne]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?user $user_id = null;
 
     public function getId(): ?int
     {
@@ -51,18 +48,6 @@ class Order
     public function setOrderStatus(array $Order_status): static
     {
         $this->Order_status = $Order_status;
-
-        return $this;
-    }
-
-    public function getUserId(): ?user
-    {
-        return $this->user_id;
-    }
-
-    public function setUserId(?user $user_id): static
-    {
-        $this->user_id = $user_id;
 
         return $this;
     }

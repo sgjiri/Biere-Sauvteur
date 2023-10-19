@@ -1,27 +1,43 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Register
+{% endblock %}
 
 {% block body %}
-    {% for flash_error in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
+	{% for flash_error in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+	{% endfor %}
 
-    <section class="hero-registration">
+	<section class="hero-registration">
 		<div class="hero-degradation">
-			<h1>Register</h1>
+			<div class="panel">
+				<div class="form-wrapper">
+					<h1>Inscrivez vous</h1>
+					<form method="post" class="form panel__login-form" id="login-form">
 
-			{{ form_errors(registrationForm) }}
+						{{ form_errors(registrationForm) }}
 
-			{{ form_start(registrationForm) }}
-			{{ form_row(registrationForm.email) }}
-			{{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-			{{ form_row(registrationForm.agreeTerms) }}
+						{{ form_start(registrationForm) }}
+						<div class="form__row">
+							{{ form_row(registrationForm.email, {'attr': {'class': 'form__input form-control'}, 'label_attr': {'class': 'form__label form-label-register'}})}}
+						</div>
+						<div class="form__row">
+							{{ form_row(registrationForm.plainPassword, {label: 'Password', 'attr': {'class': 'form__input form-control'}, 'label_attr': {'class': 'form__label form-label-register'}}) }}
+						</div>
+						<div class="form__row">
+							{{ form_row(registrationForm.first_name, {'attr': {'class': 'form__input form-control'}, 'label_attr': {'class': 'form__label form-label-register'}}) }}
+						</div>
+						<div class="form__row">
+							{{ form_row(registrationForm.agreeTerms, {'label_attr': {'class': 'form__label form-label-register'}}) }}
+						</div>
+						<div class="form__row">
 
-			<button type="submit" class="btn">Register</button>
-			{{ form_end(registrationForm) }}
+							<button class="btn btn-lg btn-primary form__submit"  type="submit" class="btn">Register</button>
+						</div>
+						{{ form_end(registrationForm) }}
+					</form>
+				</div>
+			</div>
 		</div>
 
 	</section>

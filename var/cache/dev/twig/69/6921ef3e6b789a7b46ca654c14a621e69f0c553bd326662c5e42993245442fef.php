@@ -115,7 +115,7 @@ class __TwigTemplate_41a4852f651ab210ba6849cef6be6573e960e21cd22c75589f379c068d6
         echo "
 \t\t\t";
         // line 17
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 17, $this->source); })()), "email", [], "any", false, false, false, 17), 'row');
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(twig_get_attribute($this->env, $this->source, (isset($context["registrationForm"]) || array_key_exists("registrationForm", $context) ? $context["registrationForm"] : (function () { throw new RuntimeError('Variable "registrationForm" does not exist.', 17, $this->source); })()), "email", [], "any", false, false, false, 17), 'row', ["attr" => ["class" => "custom-input-class"]]);
         echo "
 \t\t\t";
         // line 18
@@ -177,7 +177,7 @@ class __TwigTemplate_41a4852f651ab210ba6849cef6be6573e960e21cd22c75589f379c068d6
 \t\t\t{{ form_errors(registrationForm) }}
 
 \t\t\t{{ form_start(registrationForm) }}
-\t\t\t{{ form_row(registrationForm.email) }}
+\t\t\t{{ form_row(registrationForm.email, {'attr': {'class': 'custom-input-class'}}) }}
 \t\t\t{{ form_row(registrationForm.plainPassword, {
             label: 'Password'
         }) }}

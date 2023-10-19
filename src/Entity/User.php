@@ -4,12 +4,10 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
-#[UniqueEntity(fields: ['email'], message: 'There is already an account with this email')]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -30,19 +28,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?string $password = null;
 
     #[ORM\Column(length: 150)]
-    private ?string $Pseudo = null;
-
-    #[ORM\Column]
-    private ?bool $Role = null;
-
-    #[ORM\Column(length: 150)]
-    private ?string $FirstName = null;
-
-    #[ORM\Column(length: 150)]
-    private ?string $LastName = null;
-
-    #[ORM\Column(type: 'boolean')]
-    private $isVerified = false;
+    private ?string $first_name = null;
 
     public function getId(): ?int
     {
@@ -114,62 +100,14 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // $this->plainPassword = null;
     }
 
-    public function getPseudo(): ?string
-    {
-        return $this->Pseudo;
-    }
-
-    public function setPseudo(string $Pseudo): static
-    {
-        $this->Pseudo = $Pseudo;
-
-        return $this;
-    }
-
-    public function isRole(): ?bool
-    {
-        return $this->Role;
-    }
-
-    public function setRole(bool $Role): static
-    {
-        $this->Role = $Role;
-
-        return $this;
-    }
-
     public function getFirstName(): ?string
     {
-        return $this->FirstName;
+        return $this->first_name;
     }
 
-    public function setFirstName(string $FirstName): static
+    public function setFirstName(string $first_name): static
     {
-        $this->FirstName = $FirstName;
-
-        return $this;
-    }
-
-    public function getLastName(): ?string
-    {
-        return $this->LastName;
-    }
-
-    public function setLastName(string $LastName): static
-    {
-        $this->LastName = $LastName;
-
-        return $this;
-    }
-
-    public function isVerified(): bool
-    {
-        return $this->isVerified;
-    }
-
-    public function setIsVerified(bool $isVerified): static
-    {
-        $this->isVerified = $isVerified;
+        $this->first_name = $first_name;
 
         return $this;
     }
