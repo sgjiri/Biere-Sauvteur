@@ -94,6 +94,6 @@ class __TwigTemplate_3ca345d599c3ab53c881ec7898de0663a91b99470f1deec10fbcfc91919
 <p>
     Cheers!
 </p>
-", "registration/confirmation_email.html.twig", "C:\\wamp64\\www\\Symphony\\firstproject\\templates\\registration\\confirmation_email.html.twig");
+", "registration/confirmation_email.html.twig", "C:\\wamp64\\www\\Projet\\Biere-Sauvteur\\templates\\registration\\confirmation_email.html.twig");
     }
 }
