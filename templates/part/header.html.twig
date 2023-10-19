@@ -7,9 +7,9 @@
 		<div class='block-header'>
 			<nav class='navDashboard'>
 				<ul>
-					<li><a href="{{ path('app_page') }}">accuel</a></li>
-					<li><a href="">boutique</a></li>
-					<li><a href="">a propos</a></li>
+					<li><a href="{{ path('app_page') }}">accueil</a></li>
+					<li><a href="{{ path('app_butique') }}">boutique</a></li>
+					<li><a href="{{ path('app_apropo') }}">a propos</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -40,9 +40,13 @@
 		</div>
 		<div class='block-header'>
 			<div class='item-header-right'>
-				<a href="{{ path('app_register') }}" class='content-user'>
+				<a href="{{ path('app_login') }}" class='content-user'>
 					<figure>
-						<img src="../img/utilisateur(1).png" alt="logo utilisatur">
+						{% if app.user %}
+							<img src="../img/utilisateur.png" alt="logo utilisatur">
+						{% else %}
+							<img src="../img/utilisateur(1).png" alt="logo utilisatur">
+						{% endif %}
 					</figure>
 				</a>
 				<span class='content-search span-nav'>

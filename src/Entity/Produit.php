@@ -23,7 +23,7 @@ class Produit
     private ?string $Description = null;
 
     #[ORM\Column]
-    private ?int $Price = null;
+    private ?float $Price = null;
 
     #[ORM\Column(length: 150)]
     private ?string $Thumbnail = null;
