@@ -19,4 +19,8 @@
     font-family: "Poppins-Light";
     src:url(./Popins/Poppins-Light.ttf) format("truetype");
 }
+@font-face {
+    font-family: "Poppins-Medium";
+    src:url(./Popins/Poppins-Medium.ttf) format("truetype");
+}
 
