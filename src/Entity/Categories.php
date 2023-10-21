@@ -47,4 +47,8 @@ class Categories
 
         return $this;
     }
+    public function __toString(): string
+    {
+        return $this->name ?? 'N/A'; // Return the category name or 'N/A' if it's null.
+    }
 }

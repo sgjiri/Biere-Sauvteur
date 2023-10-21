@@ -1,1 +1,44 @@
 {% extends 'base.html.twig' %}
+{% block body %}
+	<section class='section-boutique hero-registration'>
+		<span class='filtre-mobil'>filtre</span>
+		<div class='width-contect-section'>
+			<div class="content-section-boutique"></div>
+			<div class="content-section-boutique content-section-boutique-products">
+				{% for produit in produits %}
+					<div class="product-box">
+						<div class='p-img-container'>
+							<div class='p-img'>
+								<a href="#">
+									<img class"p-img-front" src="../img/{{ produit.thumbnail }}" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="p-box-text">
+							<h3>{{ produit.name }}</h3>
+							{# <ul>
+								{% for category in produit.category_id %}
+									<li>{{ category.name }}</li>
+								{% endfor %}
+							</ul> #}
+							<div class='color-of-beer'>
+								<span style='background-color: {{ produit.colorhex }};'></span>
+								<p>{{ produit.color }}</p>
+							</div>
+
+							<p></p>
+							<p class='p-alchole-volume  p-card-produit'>{{ produit.alcohol }}%vol |
+								{{ produit.volume|number_format(1, '.', '') }}cl</p>
+							<p class='p-prix p-card-produit'>{{ produit.price|number_format(2, '.', '') }}€</p>
+							<a href="#">
+								<p>Ajouter au panier
+								</p>
+								<img src="../img/panier.svg" alt="panier">
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

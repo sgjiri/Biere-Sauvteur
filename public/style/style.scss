@@ -1,5 +1,5 @@
 $shadow: rgba(23, 18, 18, 0.6);
-$green: #264e26;
+$green: rgb(38, 78, 38);
 $yellow: rgb(226, 191, 58);
 $LeagueSpatanBold: "LeagueSpartan-secondTitle", sans-serif;
 $LocalBrewery: "LocalBrewery", sans-serif;
@@ -8,6 +8,8 @@ $LeagueSpartanMedium: "LeagueSpartan-medium", sans-serif;
 $Poppins-Light: "Poppins-Light", sans-serif;
 
 $Poppins-SemiBold: "Poppins-SemiBold", sans-serif;
+
+$Poppins-Medium: "Poppins-Medium", sans-serif;
 
 * {
   margin: 0;
@@ -19,6 +21,106 @@ $Poppins-SemiBold: "Poppins-SemiBold", sans-serif;
   margin: 0 auto;
   width: 85%;
 }
+.product-box{
+  width: 250px;
+  height: 500px;
+  background-color:  rgb(226, 191, 58, 0.8);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  .p-img-container{
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    .p-img{
+      a{
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .p-box-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    h3{
+      color: $green;
+      font-family: $LeagueSpatanBold;
+      font-size: 1.1em;
+      padding: 20px 0;
+      height: 80px;
+    }
+    .color-of-beer{
+      height: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      span{
+        border-radius: 50%;
+        display: block;
+        height: 20px;
+        width: 20px;
+        border: solid 2px $green;
+      }
+      p{
+        margin-left: 5px;
+        color: $green;
+        font-family: $Poppins-SemiBold;
+
+      }
+    }
+    .p-card-produit{
+      width: 100%;
+      color: $green;
+      padding: 5px 0;
+    }
+    .p-alchole-volume{
+      text-align: end;
+      font-family: $Poppins-Medium;
+    }
+    .p-prix{
+     font-family: $Poppins-SemiBold;
+    }
+    a{
+      background-color: $green;
+      width: 100%;
+      height: 50px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      p{
+        color: $yellow;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 10px;
+        font-family: $Poppins-SemiBold;    
+      }
+      img{
+        height: 60%;
+        padding-right: 20px;
+      }
+      
+    }
+  
+  
+  }
+}
+
+
 
 header {
   z-index: 100;
@@ -568,6 +670,43 @@ header {
         }
       }
     }
+  }
+}
+.section-boutique{
+  overflow: hidden;
+  .filtre-mobil{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(38, 78, 38, 0.6);
+    color: $yellow;
+    text-transform: uppercase;
+    font-family: $LeagueSpatanBold;
+    display: block;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5em;
+    cursor: pointer;
+
+    @media screen and (min-width:700px){
+      display: none;
+    }
+
+  }
+  .content-section-boutique-products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+    @media screen and (min-width: 700px) {
+      padding-top: 200px;
+    }
+    
+
   }
 }
 footer {
