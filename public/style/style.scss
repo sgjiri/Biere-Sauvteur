@@ -57,7 +57,7 @@ $Poppins-Medium: "Poppins-Medium", sans-serif;
       font-family: $LeagueSpatanBold;
       font-size: 1.1em;
       padding: 20px 0;
-      height: 80px;
+      height: 60px;
     }
     .color-of-beer{
       height: 20px;
@@ -65,6 +65,7 @@ $Poppins-Medium: "Poppins-Medium", sans-serif;
       justify-content: flex-start;
       align-items: center;
       width: 100%;
+      padding: 20px 0;
       span{
         border-radius: 50%;
         display: block;
@@ -77,6 +78,18 @@ $Poppins-Medium: "Poppins-Medium", sans-serif;
         color: $green;
         font-family: $Poppins-SemiBold;
 
+      }
+    }
+    .category-of-beer{
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px 0;
+      p{
+        color: $green;
+        font-family: $Poppins-Medium;
       }
     }
     .p-card-produit{
