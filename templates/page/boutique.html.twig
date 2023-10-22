@@ -10,20 +10,24 @@
 						<div class='p-img-container'>
 							<div class='p-img'>
 								<a href="#">
-									<img class"p-img-front" src="../img/{{ produit.thumbnail }}" alt="">
+									<img class="p-img-front" src="../img/{{ produit.thumbnail }}" alt="">
 								</a>
 							</div>
 						</div>
 						<div class="p-box-text">
 							<h3>{{ produit.name }}</h3>
-							{# <ul>
-								{% for category in produit.category_id %}
-									<li>{{ category.name }}</li>
-								{% endfor %}
-							</ul> #}
 							<div class='color-of-beer'>
 								<span style='background-color: {{ produit.colorhex }};'></span>
 								<p>{{ produit.color }}</p>
+							</div>
+							<div class='category-of-beer'>
+
+								<p>
+									{% for categoryId in categoryNames[produit.getId()] %}
+										{{ categoryId.getName() }}{{ not loop.last ? ', ' }}
+									{% endfor %}
+								</p>
+
 							</div>
 
 							<p></p>
